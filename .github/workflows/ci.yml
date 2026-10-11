@@ -32,10 +32,14 @@ jobs:
           pip install pytest pytest-asyncio
 
       - name: Run Complete Test Suite
+        env:
+          PYTHONPATH: backend
         run: |
           python -m pytest backend/tests -v
 
       - name: Enforce Retrieval Quality Gates
+        env:
+          PYTHONPATH: backend
         run: |
           python backend/scripts/evaluate_retrieval.py --dataset expanded --ci --gate-recall 0.85 --gate-mrr 0.80
 

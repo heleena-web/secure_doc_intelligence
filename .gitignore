@@ -51,7 +51,8 @@ data/uploads/*
 !data/uploads/.gitkeep
 data/storage/*
 !data/storage/.gitkeep
-models/
+/models/
+!backend/app/models/
 *.db
 *.sqlite
 *.sqlite3
