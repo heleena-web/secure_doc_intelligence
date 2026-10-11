@@ -1,0 +1,39 @@
+# FastAPI Core & Async Web Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+python-multipart>=0.0.9
+
+# Storage & SQLite
+aiosqlite>=0.20.0
+
+# Document Ingestion & Parsers
+pymupdf>=1.24.0
+python-docx>=1.1.0
+chardet>=5.2.0
+
+# Tokenizer & Chunking
+tiktoken>=0.7.0
+
+# Vector Storage & Retrieval
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Local Reranking (Lightweight ONNX)
+flashrank>=0.2.0
+
+# Local LLM Client
+ollama>=0.3.0
+httpx>=0.27.0
+
+# Security, Hashing & Auth
+argon2-cffi>=23.1.0
+pyjwt>=2.8.0
+bcrypt>=4.0.0
+email-validator>=2.0.0
+python-multipart>=0.0.9
+
+# Testing & Evaluation
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
